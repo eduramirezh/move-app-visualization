@@ -30,6 +30,5 @@
   },
   "_source": "git://github.com/almende/vis.git",
   "_target": "~3.5.0",
-  "_originalSource": "vis",
-  "_direct": true
+  "_originalSource": "vis"
 }
