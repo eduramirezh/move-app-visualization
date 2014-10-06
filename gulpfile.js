@@ -41,13 +41,6 @@ var AUTOPREFIXER_BROWSERS = [
 ];
 
 // Lint JavaScript
-gulp.task('jshint', function () {
-  return gulp.src('app/scripts/**/*.js')
-    .pipe(reload({stream: true, once: true}))
-    .pipe($.jshint())
-    .pipe($.jshint.reporter('jshint-stylish'))
-    .pipe($.if(!browserSync.active, $.jshint.reporter('fail')));
-});
 
 // Optimize Images
 gulp.task('images', function () {
@@ -83,18 +76,17 @@ gulp.task('fonts', function () {
 gulp.task('styles', function () {
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
-      'app/styles/*.scss',
-      'app/styles/**/*.css',
-      'app/styles/components/components.scss'
-    ])
+    'app/styles/*.scss',
+    'app/styles/**/*.css',
+    'app/styles/components/components.scss'
+  ])
     .pipe($.changed('styles', {extension: '.scss'}))
     .pipe($.rubySass({
-        style: 'expanded',
-        precision: 10
-      })
-      .on('error', console.error.bind(console))
-    )
-    .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
+      style: 'expanded',
+      precision: 10
+    }))
+    .on('error', console.error.bind(console))
+    .pipe($.autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
     .pipe(gulp.dest('.tmp/styles'))
     // Concatenate And Minify Styles
     .pipe($.if('*.css', $.csso()))
@@ -149,14 +141,11 @@ gulp.task('serve', ['styles'], function () {
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
     // https: true,
-    server: {
-      baseDir: ['.tmp', 'app']
-    }
+    server: ['.tmp', 'app']
   });
 
   gulp.watch(['app/**/*.html'], reload);
   gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
-  gulp.watch(['app/scripts/**/*.js'], ['jshint']);
   gulp.watch(['app/images/**/*'], reload);
 });
 
@@ -168,16 +157,13 @@ gulp.task('serve:dist', ['default'], function () {
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
     // https: true,
-    server: {
-      baseDir: 'dist'
-    }
-
+    server: 'dist'
   });
 });
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['jshint', 'html', 'images', 'fonts', 'copy'], cb);
+  runSequence('styles', ['html', 'images', 'fonts', 'copy'], cb);
 });
 
 // Run PageSpeed Insights
