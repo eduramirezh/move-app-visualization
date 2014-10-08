@@ -9,28 +9,29 @@
   background: #fff;
 }
 body {
-  background: #b1d6b1;
-  color: #fff;
-  font-family: Roboto,sans-serif;
+  background: #ECECEC;
+  color: #444;
+  font-family: "Karla", sans serif;
 }
 a:link {
   color:#2B7CE9;
 }
 h1 {
   text-align: center;
-  font-size: 37px;
+  font-size: 33px;
   line-height: 50px;
   font-weight: 150;
-  padding: 45px 25px 15px;
-  position: relative;
 }
-
+h1, h2, h3 {
+  color: #000;
+  text-transform: uppercase;
+}
 #credits {
   top: 0px;
   left: 0px;
   font-size: 10px;
 }
-header {
+header, main {
   width: 800px;
   margin-left: auto ;
   margin-right: auto ;
@@ -38,4 +39,17 @@ header {
 p {
   text-indent: 50px;
   text-align: justify;
+}
+table {
+  margin-left: auto ;
+  margin-right: auto ;
+  width: 700px;
+  text-align: left;
+  th {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+figcaption {
+  text-align:right;
 }
