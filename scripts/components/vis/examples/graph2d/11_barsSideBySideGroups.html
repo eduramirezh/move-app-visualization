@@ -1,36 +1,8 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Graph2d | Bar Graphs Side by Side Example with Groups</title>
-
-    <style type="text/css">
+<!DOCTYPE HTML><html><head><title>Graph2d | Bar Graphs Side by Side Example with Groups</title><style type=text/css>
         body, html {
             font-family: sans-serif;
         }
-    </style>
-
-    <script src="../../dist/vis.js"></script>
-    <link href="../../dist/vis.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<h2>Graph2d | Bar Graphs Side by Side Example with Groups</h2>
-<div style="width:700px; font-size:14px; text-align: justify;">
-    When using Bar graphs, it can often be the case that there are multiple bars on the same timepoint. This may not always be the desired result. You can use the
-    barChart.handleOverlap option to automatically plot the bars next to eachother or stacked on top of eachother if they occupy the same timeslot. By default, this option is on, the bars overlap.
-    Use the dropdown box to experiment with the options. The stacked only really makes sense when using groups as is shown here.
-
-    <br /><br />
-    Handle overlap: <select id="dropdownID">
-    <option value="overlap">overlap</option>
-    <option value="sideBySide" selected="selected">sideBySide</option>
-    <option value="stack">stack</option>
-    </select>
-</div>
-<br />
-
-<div id="visualization"></div>
-
-<script type="text/javascript">
+    </style><script src=../../dist/vis.js></script><link href=../../dist/vis.css rel=stylesheet type=text/css></head><body><h2>Graph2d | Bar Graphs Side by Side Example with Groups</h2><div style="width:700px; font-size:14px; text-align: justify;">When using Bar graphs, it can often be the case that there are multiple bars on the same timepoint. This may not always be the desired result. You can use the barChart.handleOverlap option to automatically plot the bars next to eachother or stacked on top of eachother if they occupy the same timeslot. By default, this option is on, the bars overlap. Use the dropdown box to experiment with the options. The stacked only really makes sense when using groups as is shown here.<br><br>Handle overlap:<select id=dropdownID><option value=overlap>overlap</option><option value=sideBySide selected>sideBySide</option><option value=stack>stack</option></select></div><br><div id=visualization></div><script type=text/javascript>
 
     var container = document.getElementById('visualization');
     var groups = new vis.DataSet();
@@ -82,6 +54,4 @@
     }
 
 
-</script>
-</body>
-</html>
+</script></body></html>

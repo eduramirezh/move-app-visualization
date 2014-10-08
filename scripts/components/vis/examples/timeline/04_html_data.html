@@ -1,9 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Timeline | HTML data</title>
-
-  <style>
+<!DOCTYPE HTML><html><head><title>Timeline | HTML data</title><style>
     body, html {
       font-family: arial, sans-serif;
       font-size: 11pt;
@@ -14,19 +9,7 @@
     span.large {
       font-size: 200%;
     }
-  </style>
-
-  <script src="../../dist/vis.js"></script>
-  <link href="../../dist/vis.css" rel="stylesheet" type="text/css" />
-
-</head>
-<body>
-<p>
-  Load HTML contents in the Timeline
-</p>
-<div id="visualization"></div>
-
-<script>
+  </style><script src=../../dist/vis.js></script><link href=../../dist/vis.css rel=stylesheet type=text/css></head><body><p>Load HTML contents in the Timeline</p><div id=visualization></div><script>
   // create a couple of HTML items in various ways
 
   var item1 = document.createElement('div');
@@ -69,6 +52,4 @@
   ]);
   var options = {};
   var timeline = new vis.Timeline(container, items, options);
-</script>
-</body>
-</html>
+</script></body></html>

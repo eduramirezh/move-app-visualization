@@ -1,12 +1,4 @@
-<!doctype html>
-<html>
-<head>
-  <title>Network | DOT language playground</title>
-
-  <script type="text/javascript" src="../../dist/vis.js"></script>
-  <link href="../../dist/vis.css" rel="stylesheet" type="text/css" />
-
-  <style type="text/css">
+<!doctype html><html><head><title>Network | DOT language playground</title><script type=text/javascript src=../../dist/vis.js></script><link href=../../dist/vis.css rel=stylesheet type=text/css><style type=text/css>
     body, html {
       font: 10pt sans;
       width: 100%;
@@ -47,39 +39,7 @@
     textarea.example {
       display: none;
     }
-  </style>
-</head>
-<body onload="drawExample('example1')">
-
-<table id="frame">
-  <col width="50%">
-  <col width="50%">
-  <tr>
-    <td colspan="2" style="height: 50px;">
-      <h1>DOT language playground</h1>
-      <div>
-        <a href="javascript: drawExample('example1')">example 1</a>
-        <a href="javascript: drawExample('example2')">example 2</a>
-        <a href="javascript: drawExample('example3')">example 3</a>
-      </div>
-      <div>
-        <br>
-        <button id="draw">Draw</button>
-        <span id="error"></span>
-      </div>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <textarea id="data"></textarea>
-    </td>
-    <td>
-      <div id="mynetwork"></div>
-    </td>
-  </tr>
-</table>
-
-<script type="text/javascript">
+  </style></head><body onload="drawExample('example1')"><table id=frame><col width=50%><col width=50%><tr><td colspan=2 style="height: 50px;"><h1>DOT language playground</h1><div><a href="javascript: drawExample('example1')">example 1</a> <a href="javascript: drawExample('example2')">example 2</a> <a href="javascript: drawExample('example3')">example 3</a></div><div><br><button id=draw>Draw</button> <span id=error></span></div></td></tr><tr><td><textarea id=data></textarea></td><td><div id=mynetwork></div></td></tr></table><script type=text/javascript>
   var network, data;
 
   var btnDraw = document.getElementById('draw');
@@ -131,9 +91,7 @@
     txtData.value = document.getElementById(id).value;
     draw();
   }
-</script>
-
-<textarea id="example1" class="example">
+</script><textarea id=example1 class=example>
   digraph {
   node [shape=circle fontSize=16]
   edge [length=100, color=gray, fontColor=black]
@@ -149,9 +107,7 @@
   color=red,
   ]
   }
-</textarea>
-
-<textarea id="example2" class="example">
+</textarea> <textarea id=example2 class=example>
   digraph topology
   {
   node[shape=circle fontSize=12]
@@ -171,9 +127,7 @@
   "10.0.255.1" -> "10.0.1.0/24"[label="HNA"];
   "10.0.1.0/24"[shape=box];
   }
-</textarea>
-
-<textarea id="example3" class="example">
+</textarea> <textarea id=example3 class=example>
   digraph G  {
   // note: not all attributes are recognized and supported by Network
   //       unrecognized attributes are ignored
@@ -197,7 +151,4 @@
   14-> 10 ;
   15-> 0 ;
   }
-</textarea>
-
-</body>
-</html>
+</textarea></body></html>

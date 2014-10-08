@@ -1,9 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Timeline | navigation menu</title>
-
-    <style type="text/css">
+<!DOCTYPE HTML><html><head><title>Timeline | navigation menu</title><style type=text/css>
         body, html, input {
             font-family: sans-serif;
             font-size: 12pt;
@@ -20,22 +15,7 @@
             margin: 10px;
             z-index: 9999;
         }
-    </style>
-
-    <script src="../../dist/vis.js"></script>
-    <link href="../../dist/vis.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<div id="visualization">
-    <div class="menu">
-        <input type="button" id="zoomIn" value="Zoom in"/>
-        <input type="button" id="zoomOut" value="Zoom out"/>
-        <input type="button" id="moveLeft" value="Move left"/>
-        <input type="button" id="moveRight" value="Move right"/>
-    </div>
-</div>
-
-<script type="text/javascript">
+    </style><script src=../../dist/vis.js></script><link href=../../dist/vis.css rel=stylesheet type=text/css></head><body><div id=visualization><div class=menu><input type=button id=zoomIn value="Zoom in"> <input type=button id=zoomOut value="Zoom out"> <input type=button id=moveLeft value="Move left"> <input type=button id=moveRight value="Move right"></div></div><script type=text/javascript>
     // create a timeline with some data
     var container = document.getElementById('visualization');
     var items = new vis.DataSet([
@@ -83,6 +63,4 @@
     document.getElementById('moveLeft').onclick  = function () { move( 0.2); };
     document.getElementById('moveRight').onclick = function () { move(-0.2); };
 
-</script>
-</body>
-</html>
+</script></body></html>

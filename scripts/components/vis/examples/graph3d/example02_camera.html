@@ -1,16 +1,7 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-  <title>Graph 3D camera position</title>
-
-  <style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><title>Graph 3D camera position</title><style>
     body {font: 10pt arial;}
     td {font: 10pt arial}
-  </style>
-
-  <script type="text/javascript" src="../../dist/vis.js"></script>
-
-  <script type="text/javascript">
+  </style><script type=text/javascript src=../../dist/vis.js></script><script type=text/javascript>
     var data = null;
     var graph = null;
 
@@ -78,32 +69,4 @@
 
       graph.on('cameraPositionChange', onCameraPositionChange);
     }
-  </script>
-</head>
-
-<body onload="drawVisualization()">
-<h1>Graph 3d camera position</h1>
-<table>
-  <tr>
-    <td>Horizontal angle (0 to 2*pi)</td>
-    <td><input type="text" id="horizontal" value="1.0"></td>
-  </tr>
-  <tr>
-    <td>Vertical angle (0 to 0.5*pi)</td>
-    <td><input type="text" id="vertical" value="0.5"></td>
-  </tr>
-  <tr>
-    <td>Distance (0.71 to 5.0)</td>
-    <td><input type="text" id="distance" value="1.7"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><input type="button" value="Set" onclick="setCameraPosition();"></td>
-  </tr>
-</table>
-
-<div id="mygraph"></div>
-
-<div id="info"></div>
-</body>
-</html>
+  </script></head><body onload=drawVisualization()><h1>Graph 3d camera position</h1><table><tr><td>Horizontal angle (0 to 2*pi)</td><td><input type=text id=horizontal value=1.0></td></tr><tr><td>Vertical angle (0 to 0.5*pi)</td><td><input type=text id=vertical value=0.5></td></tr><tr><td>Distance (0.71 to 5.0)</td><td><input type=text id=distance value=1.7></td></tr><tr><td></td><td><input type=button value=Set onclick=setCameraPosition();></td></tr></table><div id=mygraph></div><div id=info></div></body></html>

@@ -1,9 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Network | Mobile friendly</title>
-
-  <style type="text/css">
+<!DOCTYPE HTML><html><head><title>Network | Mobile friendly</title><style type=text/css>
     html, body {
       font: 10pt arial;
       padding: 0;
@@ -16,15 +11,7 @@
       width: 100%;
       height: 100%;
     }
-  </style>
-
-  <!-- for mobile devices like android and iphone -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <script type="text/javascript" src="../../dist/vis.js"></script>
-  <link href="../../dist/vis.css" rel="stylesheet" type="text/css" />
-
-  <script type="text/javascript">
+  </style><meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1"><script type=text/javascript src=../../dist/vis.js></script><link href=../../dist/vis.css rel=stylesheet type=text/css><script type=text/javascript>
     var nodes = null;
     var edges = null;
     var network = null;
@@ -100,10 +87,4 @@
       };
       network = new vis.Network(container, data, options);
     }
-  </script>
-</head>
-
-<body onload="draw()" onresize="network.redraw();">
-<div id="mynetwork"></div>
-</body>
-</html>
+  </script></head><body onload=draw() onresize=network.redraw();><div id=mynetwork></div></body></html>

@@ -1,16 +1,6 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-    <title>Convert CSV to Google Datatable</title>
-
-    <style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><title>Convert CSV to Google Datatable</title><style>
         body {font: 10pt arial;}
-    </style>
-
-    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="csv2array.js"></script>
-
-    <script type="text/javascript">
+    </style><script type=text/javascript src=http://www.google.com/jsapi></script><script type=text/javascript src=csv2array.js></script><script type=text/javascript>
         var data = null;
         var graph = null;
 
@@ -57,24 +47,4 @@
 
             alert(csvArray.length + " rows converted");
         }
-    </script>
-</head>
-
-<body>
-<div id="graph"></div>
-
-<div id="info"></div>
-
-<b>CSV</b><br>
-<textarea id="csv" style="width: 400px; height: 300px;"></textarea>
-<br>
-<br>
-<input type="button" value="Convert" onclick="convert();">
-<br>
-<br>
-
-<b>Google DataTable</b><br>
-<textarea id="datatable" style="width: 400px; height: 300px;"></textarea>
-
-</body>
-</html>
+    </script></head><body><div id=graph></div><div id=info></div><b>CSV</b><br><textarea id=csv style="width: 400px; height: 300px;"></textarea><br><br><input type=button value=Convert onclick=convert();><br><br><b>Google DataTable</b><br><textarea id=datatable style="width: 400px; height: 300px;"></textarea></body></html>

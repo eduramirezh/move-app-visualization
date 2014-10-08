@@ -1,15 +1,6 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-  <title>Graph 3D tooltips</title>
-
-  <style>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><title>Graph 3D tooltips</title><style>
     body {font: 10pt arial;}
-  </style>
-
-  <script type="text/javascript" src="../../dist/vis.js"></script>
-
-  <script type="text/javascript">
+  </style><script type=text/javascript src=../../dist/vis.js></script><script type=text/javascript>
     var data = null;
     var graph = null;
 
@@ -72,32 +63,4 @@
 
       document.getElementById('style').onchange = drawVisualization;
     }
-  </script>
-</head>
-
-<body onload="drawVisualization()">
-
-<p>
-  <label for="style"> Style:
-    <select id="style">
-      <option value="bar">bar</option>
-      <option value="bar-color">bar-color</option>
-      <option value="bar-size">bar-size</option>
-
-      <option value="dot">dot</option>
-      <option value="dot-line">dot-line</option>
-      <option value="dot-color">dot-color</option>
-      <option value="dot-size">dot-size</option>
-
-      <option value="grid">grid</option>
-      <option value="line">line</option>
-      <option value="surface">surface</option>
-    </select>
-  </label>
-</p>
-
-<div id="mygraph"></div>
-
-<div id="info"></div>
-</body>
-</html>
+  </script></head><body onload=drawVisualization()><p><label for=style>Style:<select id=style><option value=bar>bar</option><option value=bar-color>bar-color</option><option value=bar-size>bar-size</option><option value=dot>dot</option><option value=dot-line>dot-line</option><option value=dot-color>dot-color</option><option value=dot-size>dot-size</option><option value=grid>grid</option><option value=line>line</option><option value=surface>surface</option></select></label></p><div id=mygraph></div><div id=info></div></body></html>

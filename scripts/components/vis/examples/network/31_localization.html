@@ -1,9 +1,4 @@
-<!doctype html>
-<html>
-<head>
-  <title>Network | Localization</title>
-
-  <style type="text/css">
+<!doctype html><html><head><title>Network | Localization</title><style type=text/css>
     body, select {
       font: 10pt sans;
     }
@@ -51,11 +46,7 @@
       padding:10px;
       text-align: center;
     }
-  </style>
-  <script type="text/javascript" src="../../dist/vis.js"></script>
-  <link type="text/css" rel="stylesheet" href="../../dist/vis.css">
-
-  <script type="text/javascript">
+  </style><script type=text/javascript src=../../dist/vis.js></script><link type=text/css rel=stylesheet href=../../dist/vis.css><script type=text/javascript>
     var nodes = null;
     var edges = null;
     var network = null;
@@ -194,38 +185,4 @@
       };
       select.onchange();
     }
-  </script>
-</head>
-
-<body onload="draw();">
-<h2>Editing the dataset (localized)</h2>
-<p style="width: 700px; font-size:14px; text-align: justify;">
-  This is the same example as <a href="21_data_manipulation.html">21_data_manipulation.html</a>, except that there is a select box added which allows to switch locale. The localization is only relevant to the manipulation buttons.
-</p>
-
-<p>
-  <label for="locale">Select a locale:</label>
-  <select id="locale">
-    <option value="en" selected>en</option>
-    <option value="nl">nl</option>
-  </select>
-</p>
-
-<div id="network-popUp">
-  <span id="operation">node</span> <br>
-  <table style="margin:auto;"><tr>
-    <td>id</td><td><input id="node-id" value="new value"></td>
-  </tr>
-    <tr>
-      <td>label</td><td><input id="node-label" value="new value"> </td>
-    </tr></table>
-  <input type="button" value="save" id="saveButton"></button>
-  <input type="button" value="cancel" id="cancelButton"></button>
-</div>
-<br />
-<div id="mynetwork"></div>
-
-<p id="selection"></p>
-</body>
-</html>
-
+  </script></head><body onload=draw();><h2>Editing the dataset (localized)</h2><p style="width: 700px; font-size:14px; text-align: justify;">This is the same example as <a href=21_data_manipulation.html>21_data_manipulation.html</a>, except that there is a select box added which allows to switch locale. The localization is only relevant to the manipulation buttons.</p><p><label for=locale>Select a locale:</label><select id=locale><option value=en selected>en</option><option value=nl>nl</option></select></p><div id=network-popUp><span id=operation>node</span><br><table style=margin:auto;><tr><td>id</td><td><input id=node-id value="new value"></td></tr><tr><td>label</td><td><input id=node-label value="new value"></td></tr></table><input type=button value=save id=saveButton> <input type=button value=cancel id=cancelButton></div><br><div id=mynetwork></div><p id=selection></p></body></html>

@@ -1,31 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Timeline | Limit move and zoom</title>
-
-  <style>
+<!DOCTYPE HTML><html><head><title>Timeline | Limit move and zoom</title><style>
     body, html {
       font-family: arial, sans-serif;
       font-size: 11pt;
     }
-  </style>
-
-  <script src="../../dist/vis.js"></script>
-  <link href="../../dist/vis.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<p>
-  The visible range is limited in this demo:
-</p>
-<ul>
-  <li>minimum visible date is limited to 2012-01-01 using option <code>min</code></li>
-  <li>maximum visible date is limited to 2013-01-01 (excluded) using option <code>max</code></li>
-  <li>visible zoom interval is limited to a minimum of 24 hours using option <code>zoomMin</code></li>
-  <li>visible zoom interval is limited to a maximum of about 3 months using option <code>zoomMax</code></li>
-</ul>
-<div id="visualization"></div>
-
-<script>
+  </style><script src=../../dist/vis.js></script><link href=../../dist/vis.css rel=stylesheet type=text/css></head><body><p>The visible range is limited in this demo:</p><ul><li>minimum visible date is limited to 2012-01-01 using option <code>min</code></li><li>maximum visible date is limited to 2013-01-01 (excluded) using option <code>max</code></li><li>visible zoom interval is limited to a minimum of 24 hours using option <code>zoomMin</code></li><li>visible zoom interval is limited to a maximum of about 3 months using option <code>zoomMax</code></li></ul><div id=visualization></div><script>
   // create some items
   // note that months are zero-based in the JavaScript Date object, so month 4 is May
   var items = new vis.DataSet([
@@ -47,6 +25,4 @@
   var timeline = new vis.Timeline(container);
   timeline.setOptions(options);
   timeline.setItems(items);
-</script>
-</body>
-</html>
+</script></body></html>

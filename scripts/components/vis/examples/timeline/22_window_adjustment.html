@@ -1,34 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Timeline | Adjusting window</title>
-
-  <style>
+<!DOCTYPE HTML><html><head><title>Timeline | Adjusting window</title><style>
     body, html {
       font-family: arial, sans-serif;
       font-size: 11pt;
     }
-  </style>
-
-  <script src="../../dist/vis.js"></script>
-  <link href="../../dist/vis.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-
-<p>This example demonstrates functions to adjust the visible window of the Timeline.</p>
-
-<input type="button" id="window1" value="Set window from 2014-01-01 to 2014-04-01"><br>
-<input type="button" id="window2" value="Set window from 2014-01-01 to 2014-04-01 without animation"><br>
-<input type="button" id="fit" value="Fit all items"><br>
-<input type="button" id="select" value="Select & focus items 5 and 6"><br>
-<input type="button" id="focus1" value="Focus item 2"><br>
-<input type="button" id="focus2" value="Focus items 5 and 6 (slow animation)"><br>
-<input type="button" id="focus3" value="Focus current selection"><br>
-<input type="button" id="moveTo" value="Move to 2014-02-01"><br>
-
-<div id="visualization"></div>
-
-<script>
+  </style><script src=../../dist/vis.js></script><link href=../../dist/vis.css rel=stylesheet type=text/css></head><body><p>This example demonstrates functions to adjust the visible window of the Timeline.</p><input type=button id=window1 value="Set window from 2014-01-01 to 2014-04-01"><br><input type=button id=window2 value="Set window from 2014-01-01 to 2014-04-01 without animation"><br><input type=button id=fit value="Fit all items"><br><input type=button id=select value="Select & focus items 5 and 6"><br><input type=button id=focus1 value="Focus item 2"><br><input type=button id=focus2 value="Focus items 5 and 6 (slow animation)"><br><input type=button id=focus3 value="Focus current selection"><br><input type=button id=moveTo value="Move to 2014-02-01"><br><div id=visualization></div><script>
   // create a dataset with items
   // we specify the type of the fields `start` and `end` here to be strings
   // containing an ISO date. The fields will be outputted as ISO dates
@@ -89,6 +64,4 @@
     timeline.moveTo('2014-02-01');
   };
 
-</script>
-</body>
-</html>
+</script></body></html>

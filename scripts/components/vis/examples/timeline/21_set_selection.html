@@ -1,31 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Timeline | Select items</title>
-
-  <style>
+<!DOCTYPE HTML><html><head><title>Timeline | Select items</title><style>
     body, html {
       font-family: arial, sans-serif;
       font-size: 11pt;
     }
-  </style>
-
-  <script src="../../dist/vis.js"></script>
-  <link href="../../dist/vis.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<h1>Set selection</h1>
-<p style="max-width: 600px;">
-  Enter one or multiple ids of items, then press select to select the items. This demo uses the function <code>Timeline.setSelection(ids)</code>. Optionally, the window can be moved to the selected items.
-</p>
-
-<p>
-  Select item(s): <input type="text" id="selection" value="5, 6"><input type="button" id="select" value="Select"><br>
-  <label><input type="checkbox" id="focus" checked> Focus on selection</label>
-</p>
-<div id="visualization"></div>
-
-<script>
+  </style><script src=../../dist/vis.js></script><link href=../../dist/vis.css rel=stylesheet type=text/css></head><body><h1>Set selection</h1><p style="max-width: 600px;">Enter one or multiple ids of items, then press select to select the items. This demo uses the function <code>Timeline.setSelection(ids)</code>. Optionally, the window can be moved to the selected items.</p><p>Select item(s): <input type=text id=selection value="5, 6"><input type=button id=select value=Select><br><label><input type=checkbox id=focus checked> Focus on selection</label></p><div id=visualization></div><script>
   // create a dataset with items
   // we specify the type of the fields `start` and `end` here to be strings
   // containing an ISO date. The fields will be outputted as ISO dates
@@ -60,6 +38,4 @@
     });
     timeline.setSelection(ids, {focus: focus.checked});
   };
-</script>
-</body>
-</html>
+</script></body></html>

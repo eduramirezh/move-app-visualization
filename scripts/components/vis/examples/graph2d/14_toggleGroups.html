@@ -1,10 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Graph2d | Toggle Groups Example</title>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
-  <style type="text/css">
+<!DOCTYPE HTML><html><head><title>Graph2d | Toggle Groups Example</title><meta content="text/html;charset=utf-8" http-equiv=Content-Type><meta content=utf-8 http-equiv=encoding><style type=text/css>
     body, html {
       font-family: sans-serif;
     }
@@ -13,21 +7,7 @@
           width:300px;
           display:inline-block;
       }
-  </style>
-
-  <script src="../../dist/vis.js"></script>
-  <link href="../../dist/vis.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<h2>Graph2d | Groups Example</h2>
-<div style="width:700px; font-size:14px; text-align: justify;">
-    This example shows the groups visibility functionality within Graph2d. Groups have their own visibility option. By using this,
-    all graph2d instances using those groups would show or hide that group. If you have multiple instances sharing the same data and groups,
-    you can use the groups.visibility option to set it on an instance level. The graphs below all share the same groups, items and initial options.
-    We then use a setOptions like so:
-
-
-    <pre class="prettyprint lang-js">
+  </style><script src=../../dist/vis.js></script><link href=../../dist/vis.css rel=stylesheet type=text/css></head><body><h2>Graph2d | Groups Example</h2><div style="width:700px; font-size:14px; text-align: justify;">This example shows the groups visibility functionality within Graph2d. Groups have their own visibility option. By using this, all graph2d instances using those groups would show or hide that group. If you have multiple instances sharing the same data and groups, you can use the groups.visibility option to set it on an instance level. The graphs below all share the same groups, items and initial options. We then use a setOptions like so:<pre class="prettyprint lang-js">
         graph2d1.setOptions({
             groups:{
                 visibility:{
@@ -39,18 +19,7 @@
                 }
             }
         })
-    </pre>
-</div>
-<br />
-
-<div class="graphs" id="visualization1"></div>
-<div class="graphs" id="visualization2"></div>
-<div class="graphs" id="visualization3"></div>
-<div class="graphs" id="visualization4"></div>
-<div class="graphs" id="visualization5"></div>
-<div class="graphs" id="visualization6"></div>
-
-<script type="text/javascript">
+    </pre></div><br><div class=graphs id=visualization1></div><div class=graphs id=visualization2></div><div class=graphs id=visualization3></div><div class=graphs id=visualization4></div><div class=graphs id=visualization5></div><div class=graphs id=visualization6></div><script type=text/javascript>
     // create a dataSet with groups
     var names = ['SquareShaded', 'Bar', 'Blank', 'CircleShaded'];
     var groups = new vis.DataSet();
@@ -140,6 +109,4 @@
   graph2d3.setOptions({groups:{visibility:{0:false, 1:false, 2:true, 3:false, "__ungrouped__":false}}})
   graph2d4.setOptions({groups:{visibility:{0:false, 1:false, 2:false, 3:true, "__ungrouped__":false}}})
   graph2d5.setOptions({groups:{visibility:{0:false, 1:false, 2:false, 3:false, "__ungrouped__":true}}})
-</script>
-</body>
-</html>
+</script></body></html>
