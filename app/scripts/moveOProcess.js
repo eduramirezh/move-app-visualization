@@ -71,8 +71,8 @@ var data = {
   edges: edges,
 };
 var options = {
-  //width: '800px',
-  //height: '800px'
+  width: '800px',
+  height: '500px'
 };
 var graph = new vis.Network(container, data, options);
 

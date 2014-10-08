@@ -1,6 +1,41 @@
-@import 'h5bp';
-#map_canvas {
-  width: 500px;
-  height: 400px;
+#graph {
+  border-width: 2px;
+  border-color: #000;
+  border-radius: 20px;
+  width: 800px;
+  height: 500px;
+  margin-left: auto ;
+  margin-right: auto ;
+  background: #fff;
+}
+body {
+  background: #b1d6b1;
+  color: #fff;
+  font-family: Roboto,sans-serif;
+}
+a:link {
+  color:#2B7CE9;
+}
+h1 {
+  text-align: center;
+  font-size: 37px;
+  line-height: 50px;
+  font-weight: 150;
+  padding: 45px 25px 15px;
+  position: relative;
 }
 
+#credits {
+  top: 0px;
+  left: 0px;
+  font-size: 10px;
+}
+header {
+  width: 800px;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+p {
+  text-indent: 50px;
+  text-align: justify;
+}
