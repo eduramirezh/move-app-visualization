@@ -38,8 +38,9 @@ _.forEach(moveOPlaces, function(p){
   });
   nodes.push({
     id: p.id,
-    label: p.properties.name || p.id.toString(),
+    title: p.properties.name || p.id.toString(),
     shape: 'dot',
+    label:'',
     radius: Math.sqrt(duration/100000),
     mass: Object.keys(p.properties.next).length,
     fontSize: Math.log(duration*0.01)*2
@@ -72,7 +73,17 @@ var data = {
 };
 var options = {
   width: '800px',
-  height: '500px'
+  height: '500px',
+  nodes: {
+    borderWidth: 0.01
+  },
+  tooltip: {
+    delay: 0,
+    color: {
+      background: '#fff',
+      border: 'ddd'
+    }
+  }
 };
 var graph = new vis.Network(container, data, options);
 

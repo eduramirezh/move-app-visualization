@@ -1,0 +1,5 @@
+Sacar borde
+descripcion elementos graficas
+nombres on hover
+distancia on hover
+hover
