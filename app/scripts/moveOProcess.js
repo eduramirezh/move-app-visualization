@@ -38,7 +38,7 @@ _.forEach(moveOPlaces, function(p){
     duration += timeDifference(i[0], i[1]);
   });
   title = p.properties.name || title;
-  title += '\n' + duration/(60*24) + ' días';
+  title += '\n<br>' + (duration/(60*60*1000)).toFixed(2) + ' horas';
   nodes.push({
     id: p.id,
     title: title,
@@ -64,7 +64,8 @@ for(var from in bidirectional){
     edges.push({
       from: from,
       to: to,
-      width: Math.pow(1.7, bidirectional[from][to]) - 0.7
+      width: Math.pow(1.7, bidirectional[from][to]) - 0.7,
+      title: bidirectional[from][to] + ' veces'
     });
   }
 }
