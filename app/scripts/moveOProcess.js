@@ -29,6 +29,7 @@ var nodes = [];
 var edges = [];
 var bidirectional = {};
 var duration;
+var title = '';
 
 _.forEach(moveOPlaces, function(p){
   'use strict';
@@ -36,9 +37,11 @@ _.forEach(moveOPlaces, function(p){
   _.forEach(p.properties.intervals, function(i){
     duration += timeDifference(i[0], i[1]);
   });
+  title = p.properties.name || title;
+  title += '\n' + duration/(60*24) + ' días';
   nodes.push({
     id: p.id,
-    title: p.properties.name || p.id.toString(),
+    title: title,
     shape: 'dot',
     label:'',
     radius: Math.sqrt(duration/100000),
